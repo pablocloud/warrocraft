@@ -1,0 +1,71 @@
+/* Estilos personalizados para Warrocraft - Minecraft Survival New Game 3 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0c0c0c;
+    color: #f8f9fa;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 { font-size: 4.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 5px solid #198754;
+}
+
+.navbar {
+    border-bottom: 1px solid #333;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #198754;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2);
+}
+
+.card-title {
+    color: #198754;
+}
+
+.footer {
+    padding: 3rem 0;
+    background-color: #0a0a0a;
+    border-top: 1px solid #333;
+}
+
+.btn-primary {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-primary:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
