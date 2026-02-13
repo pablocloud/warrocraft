@@ -2,8 +2,8 @@ title: Warrocraft
 email: info@warrocraft.com
 description: >-
   Servidor de Minecraft Survival con el modpack New Game 3.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://localhost:4000
+baseurl: "/warrocraft"
+url: "https://pablocloud.github.io"
 
 theme: minima
 plugins:
