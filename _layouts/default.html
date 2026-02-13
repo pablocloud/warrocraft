@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}Warrocraft</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/all.min.css">
+    <!-- Google Fonts Local -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/fonts.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="{{ site.baseurl }}/">WARROCRAFT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/"><i class="fa-solid fa-house me-1"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#features"><i class="fa-solid fa-list-check me-1"></i> Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#mod"><i class="fa-solid fa-cubes me-1"></i> New Game 3</a></li>
+                    <li class="nav-item"><a class="nav-link {% if page.url == '/join.html' %}active{% endif %}" href="{{ site.baseurl }}/join.html"><i class="fa-solid fa-right-to-bracket me-1"></i> Cómo entrar</a></li>
+                    <li class="nav-item"><a class="nav-link {% if page.url == '/tutoriales.html' %}active{% endif %}" href="{{ site.baseurl }}/tutoriales.html"><i class="fa-solid fa-book me-1"></i> Tutoriales</a></li>
+                    <li class="nav-item"><a class="nav-link {% if page.url == '/ranks.html' %}active{% endif %}" href="{{ site.baseurl }}/ranks.html"><i class="fa-solid fa-crown me-1"></i> Rangos</a></li>
+                    <li class="nav-item"><a class="nav-link {% if page.url == '/shop.html' %}active{% endif %}" href="{{ site.baseurl }}/shop.html"><i class="fa-solid fa-store me-1"></i> Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3" href="https://discord.gg/hPepvm5rHd" target="_blank"><i class="fa-brands fa-discord me-1"></i> Unirse a Discord</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{ content }}
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-auto">
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://discord.gg/hPepvm5rHd" target="_blank" class="text-white mx-2 fs-4"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.curseforge.com/minecraft/modpacks/new-game-3" target="_blank" class="text-white mx-2 fs-4"><i class="fa-solid fa-fire-flame-curved"></i></a>
+            </div>
+            <p class="mb-2">&copy; 2026 Warrocraft Server. Todos los derechos reservados.</p>
+            <p class="small opacity-75"><i class="fa-solid fa-circle-info me-1"></i> No afiliado a Mojang Studios.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="{{ site.baseurl }}/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
